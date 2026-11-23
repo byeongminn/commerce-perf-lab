@@ -23,6 +23,12 @@ export type ProductListResponse = {
   totalCount: number
 }
 
+export type WishResponse = {
+  productId: string
+  isWished: boolean
+  wishCount: number
+}
+
 export type CartResponse = {
   items: { productId: string; quantity: number }[]
   totalQuantity: number
